@@ -1,0 +1,143 @@
+/* Estilos generales */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal para el contenido a convertir en PDF */
+  #content {
+    width: 800px;           /* ancho fijo para asegurar la captura completa */
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: block;         /* Forzar display block para evitar problemas de renderizado */
+  }
+  
+  /* Estilos de la tabla */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  table, th, td {
+    border: 1px solid #000;
+  }
+  
+  th, td {
+    padding: 4px;
+    vertical-align: middle;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  
+  .center {
+    text-align: center;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  
+  .no-border {
+    border: none !important;
+  }
+  
+  .small-input {
+    width: 60px;
+  }
+  
+  .medium-input {
+    width: 120px;
+  }
+  
+  .large-input {
+    width: 180px;
+  }
+  
+  /* Estilos globales para inputs y textareas */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="date"],
+  textarea {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    display: block;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus,
+  input[type="email"]:focus,
+  input[type="date"]:focus,
+  textarea:focus {
+    border-bottom: 1px solid #000;
+  }
+  
+  .observaciones-input,
+  .visible-textarea,
+  #textarea-clone {
+    width: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    resize: none;
+    padding: 2px;
+    overflow: hidden;
+    display: block;
+  }
+  
+  #textarea-clone {
+    white-space: pre-wrap;
+  }
+  
+  /* Estilo específico para los inputs de celdas (.estado-input) */
+  input.estado-input {
+    width: 15px !important;
+    height: 15px !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+  }
+  
+  /* Ajustes para impresión/PDF */
+  @media print {
+    body {
+      margin: 0;
+      font-size: 10px;
+    }
+    #content {
+      padding: 5px;
+      max-width: 800px; /* Ajustamos el ancho máximo */
+      border: none;
+      /* Forzamos el display block para evitar problemas con flex */
+      display: block !important;
+    }
+    table, th, td {
+      font-size: 8px;
+      padding: 2px;
+    }
+    input.estado-input {
+      width: 28px !important;
+      height: 28px !important;
+      font-size: 10px !important;
+    }
+  }
+  

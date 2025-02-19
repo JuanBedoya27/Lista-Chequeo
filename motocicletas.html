@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Chequeo motocicletas</title>
+  <link rel="stylesheet" href="prestamo.css">
+
+</head>
+
+<body>
+  <div id="content">
+
+    <form>
+      <!-- ENCABEZADO PRINCIPAL -->
+      <table>
+        <tr>
+          <td colspan="9" class="center bold">
+            LISTA DE CHEQUEO MOTOCICLETAS
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" class="center bold">CÓDIGO: F-RF-016</td>
+          <td colspan="3" class="center bold">VERSIÓN: 02</td>
+          <td colspan="3" class="center bold">FECHA: 02/01/2020</td>
+        </tr>
+        <tr>
+          <td colspan="6" class="bold">
+            INSPECCIÓN GENERAL MOTOCICLETA
+          </td>
+        </tr>
+        <tr>
+      </table>
+
+      <!-- 1. DATOS DEL CONDUCTOR Y DEL VEHÍCULO -->
+      <table>
+        <tr>
+          <td colspan="9" class="bold">1. DATOS DEL CONDUCTOR Y DEL VEHÍCULO</td>
+        </tr>
+        <tr>
+          <td colspan="3">Nombre: <input type="text" class="medium-input"></td>
+          <td colspan="3">C.C.: <input type="text" class="medium-input"></td>
+          <td colspan="3">Edad: <input type="text" class="small-input"></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            No. Licencia de Conducción: <input type="text" class="medium-input">
+          </td>
+          <td colspan="3">
+            Restricciones de la licencia: <input type="text" class="small-input">
+          </td>
+          <td>
+            Vence: <input type="text" class="small-input">
+          </td>
+          <td colspan="2">
+            Categoría: <input type="text" class="small-input">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">Placa: <input type="text" class="medium-input"></td>
+          <td colspan="3">Marca: <input type="text" class="medium-input"></td>
+          <td colspan="3">Modelo: <input type="text" class="medium-input"></td>
+          <td colspan="3">Fecha de inspección: <input type="text" class="medium-input"></td>
+
+        </tr>
+      </table>
+
+      <!-- 2. DATOS DEL VEHÍCULO -->
+      <table>
+        <tr>
+          <td colspan="9" class="bold">2. TIPO DE VEHÍCULO</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            <label><input type="checkbox"> Motocicleta hasta 125 cc</label> &nbsp;
+            <label><input type="checkbox"> Motocicleta superior a 125 cc</label> &nbsp;
+          </td>
+        </tr>
+      </table>
+
+      <!-- 3. DOCUMENTOS -->
+      <table>
+        <tr>
+          <td colspan="9" class="bold">3. DOCUMENTOS</td>
+        </tr>
+        <tr>
+          <th style="width: 30%;">Documentos</th>
+          <th style="width: 20%;">Número</th>
+          <th style="width: 20%;">Vence</th>
+          <th style="width: 20%;">No aplica</th>
+          <th style="width: 30%;">OBSERVACIONES</th>
+        </tr>
+        <tr>
+          <td>Licencia de Tránsito del Vehículo</td>
+          <td><input type="text" class="medium-input"></td>
+          <td><input type="text" class="medium-input"></td>
+          <td><input type="text" class="medium-input"></td>
+          <td><input type="text" style="width: 100%;"></td>
+        </tr>
+        <tr>
+          <td>Seguro Obligatorio (SOAT)</td>
+          <td><input type="text" class="medium-input"></td>
+          <td><input type="text" class="medium-input"></td>
+          <td><input type="text" class="medium-input"></td>
+          <td><input type="text" style="width: 100%;"></td>
+        </tr>
+        <tr>
+          <td>Revisión técnico mecánica y de gases</td>
+          <td><input type="text" class="medium-input"></td>
+          <td><input type="text" class="medium-input"></td>
+          <td><input type="text" class="medium-input"></td>
+          <td><input type="text" style="width: 100%;"></td>
+        </tr>
+        <tr>
+          <td>Póliza Todo Riesgo</td>
+          <td><input type="text" class="medium-input"></td>
+          <td><input type="text" class="medium-input"></td>
+          <td><input type="text" class="medium-input"></td>
+          <td><input type="text" style="width: 100%;"></td>
+        </tr>
+      </table>
+
+      <!-- 3. VERIFICACION DE LA CABINA -->
+      <table>
+        <tr>
+          <td colspan="9" class="bold">4. VERIFICACIÓN DE MOTOCICLETA </td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            MES: <input type="text" class="small-input">
+            SEMANA: <input type="text" class="medium-input">
+          </td>
+      </table>
+
+      <!-- SUBTABLA DE CRITERIOS / ESTADO / OBSERVACIONES -->
+      <table>
+        <tr>
+          <th style="width: 30%;">CRITERIOS</th>
+
+          <th colspan="3">ESTADO</th>
+          <th colspan="3">ESTADO</th>
+          <th colspan="3">ESTADO</th>
+          <th colspan="3">ESTADO</th>
+          <th colspan="3">ESTADO</th>
+          <th colspan="3">ESTADO</th>
+          <th colspan="3">ESTADO</th>
+
+          <th style="width: 15%;">OBSERVACIONES</th> <br>
+          <th style="width: 15%;">Acción correctiva (DD/MM/AAAA)</th>
+        </tr>
+        <tr>
+          <td></td>
+          <!-- Ejemplo de encabezado: Lunes B, Lunes M, etc. -->
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+          <td></td>
+
+        </tr>
+        <!-- FILAS DE CRITERIOS -->
+        <tr>
+          <td>Nivel de aceite </td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+        <tr>
+          <td>Nivel de liquido de frenos</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+          
+        </tr>
+        <tr>
+          <td>Estado y funcionamiento de luces delantera y trasera (STOP)</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+        <tr>
+          <td>Direccionales</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+
+        </tr>
+        <tr>
+          <td>Pedales y maniguetas (frenos, cambios) </td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+
+        <tr>
+          <td>Chasis</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+
+        <tr>
+          <td>Reposapies conductor y pasajero</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+        <tr>
+          <td>Latoneria y sillín</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+        <tr>
+          <td>Llantas </td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+        <tr>
+          <td>Pines</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+        <tr>
+          <td>Kit de arrastre</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+        <tr>
+          <td>Tablero (pilotos) </td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+
+        </tr>
+        <tr>
+          <td>Pito </td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+
+        </tr>
+        <tr>
+          <td>Espejos</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+        <tr>
+          <td>Gato (central y lateral)</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+
+        <tr>
+          <td>Guarda cadena </td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+
+        </tr>
+        <tr>
+          <td>Tapas laterales</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+
+        </tr>
+        <tr>
+          <td>Guarda barros (delantero y trasero)</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+        <tr>
+          <td>Sistema de frenos (delantero y trasero)</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+        <tr>
+          <td>Suspensión delantera y trasera </td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+        <tr>
+          <td>Manubrio y maniguetas</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+
+        </tr>
+        <tr>
+          <td>Motor empaques fugas </td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+
+        </tr>
+        <tr>
+          <td>Sonido motor</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+        </tr>
+        <tr>
+          <td>Mofle</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones"></textarea></td>
+
+      </table>
+
+      <table>
+        <tr>
+          <th style="width: 30%;"> 5. Equipo de prevención y seguridad víal y epp</th>
+
+          <th colspan="3" style="width: 14.28%;">ESTADO</th>
+          <th colspan="3" style="width: 14.28%;">ESTADO</th>
+          <th colspan="3" style="width: 14.28%;">ESTADO</th>
+          <th colspan="3" style="width: 14.28%;">ESTADO</th>
+          <th colspan="3" style="width: 14.28%;">ESTADO</th>
+          <th colspan="3" style="width: 14.28%;">ESTADO</th>
+          <th colspan="3" style="width: 14.28%;">ESTADO</th>
+
+          <th style="width: 20%;">OBSERVACIONES</th> <br>
+        </tr>
+        <tr>
+          <td></td>
+          <!-- Ejemplo de encabezado: Lunes B, Lunes M, etc. -->
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+
+          <th class="center">b</th>
+          <th class="center">m</th>
+          <th class="center">na</th>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Herramientas (Bujía de respuesto, Llave bujía, Bombillos nuevos, Fusible)</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones">
+                    </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Casco</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones">
+                    </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Guantes</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones">
+                    </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Impermeable</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones">
+                    </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Gafas </td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones">
+                    </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Chaleco</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones">
+                    </textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Maletero con luz reflectiva y parrilla (soporte)</td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones">
+                    </textarea>
+          </td>
+        </tr>
+
+      </table>
+
+      <table>
+        <tr>
+          <th style="width: 30%;"> Criterios</th>
+
+          <th colspan="3" style="width: 14.28;">CUMPLE</th>
+          <th colspan="3" style="width: 14.28;">CUMPLE</th>
+          <th colspan="3" style="width: 14.28;">CUMPLE</th>
+          <th colspan="3" style="width: 14.28;">CUMPLE</th>
+          <th colspan="3" style="width: 14.28;">CUMPLE</th>
+          <th colspan="3" style="width: 14.28;">CUMPLE</th>
+          <th colspan="3" style="width: 14.28;">CUMPLE</th>
+
+          <th style="width: 20%;">OBSERVACIONES</th> <br>
+        </tr>
+        <tr>
+          <td></td>
+          <!-- Ejemplo de encabezado: Lunes B, Lunes M, etc. -->
+          <th class="center">si</th>
+          <th class="center">no</th>
+          <th class="center">na</th>
+
+          <th class="center">si</th>
+          <th class="center">no</th>
+          <th class="center">na</th>
+
+          <th class="center">si</th>
+          <th class="center">no</th>
+          <th class="center">na</th>
+
+          <th class="center">si</th>
+          <th class="center">no</th>
+          <th class="center">na</th>
+
+          <th class="center">si</th>
+          <th class="center">no</th>
+          <th class="center">na</th>
+
+          <th class="center">si</th>
+          <th class="center">no</th>
+          <th class="center">na</th>
+
+          <th class="center">si</th>
+          <th class="center">no</th>
+          <th class="center">na</th>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Luego de verificado todos los ítems anteriores, se determina el cumplimiento y aprobación del vehículo
+          </td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><input type="text" class="estado-input"></td>
+          <td><textarea class="visible-textarea" id="observaciones" name="observaciones">
+                    </textarea>
+          </td>
+        </tr>
+      </table>
+      <div id="textarea-clone" style="display: none;"></div>
+
+      <!-- COMPROMISOS DEL CONDUCTOR -->
+      <table>
+        <tr>
+          <td colspan="9" class="bold">COMPROMISOS DEL CONDUCTOR ASIGNADO AL VEHÍCULO</td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            Me comprometo a tener al día todos los formatos del parque automotor diligenciados.
+          </td>
+        </tr>
+        <tr>
+          <td colspan="9">
+            Me comprometo a reportar con anticipación las fechas de vencimiento del SOAT y la Técnico
+            mecánica,
+            a reportar las fallas mecánicas que este presente, a estar pendiente de los mantenimientos
+            preventivos y correctivo, a utilizar todos los elementos de protección personal y a cumplir
+            con todos los instructivos.
+          </td>
+        </tr>
+      </table>
+
+      <!-- FIRMAS -->
+      <table>
+        <tr>
+          <td colspan="5">
+            <strong>Nombre Responsable de la inspección:</strong> <br>
+            <input type="text" style="width: 100%;">
+          </td>
+          <td colspan="4">
+            <strong>Nombre del conductor:</strong> <br>
+            <input type="text" style="width: 100%;">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5">
+            <strong>Firma Responsable:</strong> <br><br>
+            ___________________________________
+          </td>
+          <td colspan="4">
+            <strong>Firma del conductor:</strong> <br><br>
+            ___________________________________
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <button type="button" onclick="downloadPDF()">Descargar PDF</button>
+
+  <script src="motocicleta.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+
+</body>
+
+</html>
